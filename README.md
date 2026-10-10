@@ -23,12 +23,11 @@ Then visit `http://127.0.0.1:9137/`.
 - `.gitignore` — excludes the attached reference files, preview image, and local tooling clutter. It intentionally keeps `docs/` trackable.
 - `.gitattributes` — normalizes source line endings and treats artwork as binary.
 
-## Publish as a GitHub Pages project site
+## GitHub Pages project site
 
 1. After any site edit, run `python tools/build_pages.py` and commit the updated `docs/` folder.
-2. Push this project to [D4nGuerrero/lwd](https://github.com/D4nGuerrero/lwd), which is configured as the `origin` remote.
-3. In that repository, open **Settings → Pages**. Under **Build and deployment**, choose **Deploy from a branch**, select the branch containing this project, and choose **`/docs`** as the folder. Save.
-4. The project site URL is expected to be `https://d4nguerrero.github.io/lwd/`. This site uses relative asset paths, so it works under that repository path without a hard-coded base URL.
+2. Push to the `main` branch of [D4nGuerrero/lwd](https://github.com/D4nGuerrero/lwd), configured as the `origin` remote.
+3. GitHub Pages is already configured to publish from **`main` → `/docs`**. The live site is [dannyg.dev/lwd](https://dannyg.dev/lwd/), using the account's existing Pages custom domain. All site assets use relative paths, so they resolve under the `/lwd/` project path.
 
 The `docs/` folder deliberately omits the reference attachments, development scripts, README, and temporary preview images. GitHub Pages serves static files; the quote form continues to open the visitor's email app because there is no backend.
 
@@ -40,6 +39,6 @@ The `docs/` folder deliberately omits the reference attachments, development scr
 
 Navigation links scroll to their sections. Portfolio cards open detail dialogs. The testimonial arrows cycle through reviews. The quote form validates required fields and prepares an email in the visitor's mail app.
 
-Before publishing, verify the inferred `CONTACT_EMAIL` in `script.js` and replace the generic social network destinations with the business's actual accounts. The mockup did not provide these destinations. Footer Privacy and Terms labels currently lead to the contact section until approved policy pages are supplied.
+The published site currently uses an inferred `CONTACT_EMAIL` in `script.js` and generic social network destinations because the mockup did not provide them. Replace those with the business's actual contact details when available. Footer Privacy and Terms labels currently lead to the contact section until policy pages are supplied.
 
 The desktop composition was compared in the browser at the mockup's 720 × 1280 viewport. A 390 px mobile viewport was also reviewed, including its menu and dialogs.
