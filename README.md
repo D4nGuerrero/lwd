@@ -16,7 +16,7 @@ Then visit `http://127.0.0.1:9137/`.
 - `css/sections.css` — hero, services, work, process, testimonials, CTA, footer, and dialogs.
 - `css/responsive.css` — mobile layouts and reduced motion handling.
 - `script.js` — menu, testimonial carousel, project details, and contact form.
-- `assets/` — extracted imagery used as separate assets.
+- `assets/` — supplied illustrations and extracted imagery used as separate assets.
 - `tools/extract_assets.py` — repeatable asset extraction from the supplied mockup files.
 - `tools/build_pages.py` — copies only public site files into `docs/` and checks relative paths.
 - `docs/` — ready-to-publish GitHub Pages output, including `.nojekyll`.
@@ -33,7 +33,7 @@ The `docs/` folder deliberately omits the reference attachments, development scr
 
 ## Asset provenance
 
-`laredo-bridge.jpg` and `underwater-catfish.jpg` are the separate original illustrations supplied with the mockup. The LWD mark, three portfolio previews, the river texture, and shoreline details were extracted from the page mockup. The small service and process icons were recreated as SVG markup because they were not provided as independent assets. The handwritten callout and decorative browser frame are CSS and live text. The portfolio previews are cropped screenshots of the depicted client sites, so their original lettering remains part of those preview images; page headings, descriptions, buttons, and links are live HTML.
+`river-journey.png` is cropped directly from the transparent bridge and river illustration supplied after the first draft; it replaces the earlier river and shoreline masks without redrawing the artwork. `laredo-bridge.jpg` and `underwater-catfish.jpg` are the separate original illustrations supplied with the mockup. The LWD mark and three portfolio previews were extracted from the page mockup. The small service and process icons were recreated as SVG markup because they were not provided as independent assets. The handwritten callout and decorative browser frame are CSS and live text. The portfolio previews are cropped screenshots of the depicted client sites, so their original lettering remains part of those preview images; page headings, descriptions, buttons, and links are live HTML.
 
 ## Interactions and launch details
 

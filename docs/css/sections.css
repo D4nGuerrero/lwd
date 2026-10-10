@@ -1,9 +1,9 @@
 /* Hero and page sections */
-.hero{height:calc(218 * var(--u));position:relative;background-image:linear-gradient(90deg,#f8f6ee 0%,#f8f6eedb 20%,#f8f6ee88 33%,#f8f6ee00 60%),url('../assets/laredo-bridge.jpg');background-size:cover,cover;background-position:center,center 50%}
+.hero{height:calc(218 * var(--u));position:relative;background:#f8f6ee}
 
-.hero:before{content:"";position:absolute;right:0;bottom:calc(-48 * var(--u));width:calc(120 * var(--u));height:calc(115 * var(--u));background:radial-gradient(ellipse at 100% 54%,#f8f6ee 34%,#f8f6eeed 51%,#f8f6ee00 77%);z-index:1;pointer-events:none}
+.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(90deg,#f8f6ee 0%,#f8f6eedb 20%,#f8f6ee88 33%,#f8f6ee00 60%),url('../assets/laredo-bridge.jpg');background-size:cover,cover;background-position:center,center 50%;-webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 69%,transparent 100%);mask-image:linear-gradient(to bottom,#000 0%,#000 69%,transparent 100%);pointer-events:none}
 
-.hero:after{content:"";position:absolute;left:0;bottom:0;width:42%;height:26%;background:linear-gradient(0deg,#f8f6ee 0%,#f8f6ee00 100%);z-index:1;pointer-events:none}
+
 
 .hero-copy{position:absolute;left:calc(42 * var(--u));top:calc(10 * var(--u));width:calc(236 * var(--u));z-index:2}
 
@@ -22,9 +22,8 @@ h1 em{font-weight:700;color:#285e70;white-space:nowrap}
 .handwritten{position:absolute;z-index:5;right:calc(24 * var(--u));bottom:calc(-48 * var(--u));text-align:center;transform:rotate(-11deg);font-family:'Brush Script MT','Segoe Script',cursive;font-size:calc(14 * var(--u));line-height:1.12;color:#31434a;font-style:italic}
 
 .flow-content{position:relative;background:#f8f6ee}
-.flow-art{position:absolute;z-index:0;pointer-events:none;left:0;right:0;top:calc(-20 * var(--u));height:calc(733 * var(--u))}
-.flow-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:fill}
-.flow-art .shore{z-index:1}
+.flow-art{position:absolute;z-index:0;pointer-events:none;left:0;right:0;top:calc(-20 * var(--u))}
+.flow-art img{width:100%;height:auto;-webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 6%,#000 73%,transparent 91%);mask-image:linear-gradient(to bottom,transparent 0%,#000 6%,#000 73%,transparent 91%)}
 
 .section-grid{display:grid;position:relative;z-index:1}
 .section-intro{position:relative}
@@ -70,7 +69,7 @@ h1 em{font-weight:700;color:#285e70;white-space:nowrap}
 .testimonials .section-intro>p:not(.eyebrow){max-width:calc(175 * var(--u))}
 .testimonial-wrap{position:relative;padding-top:calc(7 * var(--u));width:calc(420 * var(--u))}
 .testimonial-cards{display:grid;grid-template-columns:repeat(3,calc(111 * var(--u)));gap:calc(7 * var(--u));margin-left:calc(26 * var(--u))}
-.testimonial-card{min-height:calc(116 * var(--u));background:#faf8f2d9;border:1px solid #ebe9e0;border-radius:calc(4 * var(--u));padding:calc(10 * var(--u));box-shadow:0 1px 6px #60878a13;display:flex;flex-direction:column}
+.testimonial-card{min-height:calc(116 * var(--u));background:#faf8f2f5;border:1px solid #ebe9e0;border-radius:calc(4 * var(--u));padding:calc(10 * var(--u));box-shadow:0 1px 6px #60878a13;display:flex;flex-direction:column}
 .testimonial-card blockquote{font-size:calc(8 * var(--u));line-height:1.27;margin:0 0 auto}
 .testimonial-card .stars{font-size:calc(10 * var(--u));letter-spacing:calc(1 * var(--u));line-height:1;color:#d9af43;margin-top:calc(5 * var(--u))}
 .testimonial-card .person{font-size:calc(7.2 * var(--u));font-weight:700;margin:calc(6 * var(--u)) 0 calc(2 * var(--u))}
