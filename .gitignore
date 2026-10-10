@@ -1,0 +1,23 @@
+# Source references supplied through the Codex workspace are not site files.
+.codex-remote-attachments/
+
+# Temporary preview and Python artifacts.
+assets/river-preview.jpg
+__pycache__/
+*.pyc
+
+# Local environment, editor, OS, and build clutter.
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+node_modules/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.log
+
+# Keep docs/ tracked: GitHub Pages publishes this folder.
